@@ -23,5 +23,7 @@ public class Store {
         iPhoneStockObservable.add(observer4);
 
         iPhoneStockObservable.setStockCount(10);
+        // iPhoneStockObservable.setStockCount(-10);  // here I am reducing the stock count to 0, why -10? look at the method.
+        // iPhoneStockObservable.setStockCount(10);  // here, it was 0, and we are adding 10, so it will notify
     }
 }
