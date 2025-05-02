@@ -6,7 +6,6 @@ import design_patterns.observer.Observer.EmailAlertObserverImpl;
 import design_patterns.observer.Observer.MobileAlertObserverImpl;
 import design_patterns.observer.Observer.NotificationAlertObserver;
 
-import javax.management.NotificationFilter;
 
 public class Store {
     public static void main(String[] args) {
