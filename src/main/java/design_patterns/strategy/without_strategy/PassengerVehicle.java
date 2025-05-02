@@ -1,4 +1,4 @@
 package design_patterns.strategy.without_strategy;
 
-public class PassengerVehicle {
+public class PassengerVehicle extends Vehicle{
 }
