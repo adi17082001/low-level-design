@@ -6,10 +6,12 @@ import design_patterns.decorator.ToppingsDecorator.Mushroom;
 
 public class Billing {
     public static void main(String[] args) {
-        BasePizza MargheritaWithExtraCheese = new ExtraCheese(new Margherita());
-        System.out.println("Margherita with extra cheese : Rs " + MargheritaWithExtraCheese.cost());
+        // decorate margherita with extra cheese
+        BasePizza margheritaWithExtraCheese = new ExtraCheese(new Margherita());
+        System.out.println("Margherita with extra cheese : Rs " + margheritaWithExtraCheese.cost());
 
-        BasePizza MargheritaWithExtraCheeseAndMushroom = new Mushroom(new ExtraCheese(new Margherita()));
-        System.out.println("Margherita with extra cheese and mushroom : Rs " + MargheritaWithExtraCheeseAndMushroom.cost());
+        // decorate margherita with extra cheese and mushroom
+        BasePizza margheritaWithExtraCheeseAndMushroom = new Mushroom(margheritaWithExtraCheese);
+        System.out.println("Margherita with extra cheese and mushroom : Rs " + margheritaWithExtraCheeseAndMushroom.cost());
     }
 }
